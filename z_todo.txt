@@ -1,0 +1,23 @@
+รอแก้
+1. แก้ไขบรรทัดที่ 85 ในทุกหน้าให้เป็น contact.php
+<li><a href="contact.php">Contact</a></li>
+
+2. contact.php , appointment.php
+3. ไฟล์ questionnaire
+
+
+
+
+
+
+คู่มือ
+1. การรันทุกครั้ง  ให้พิมพ์ localhost/index.html 
+
+
+
+
+
+
+ตรวจสอบ
+1. หา host ที่สามารถวางได้หลายโดเมน
+2. ดูราคาที่จดหลายโดเมน ราคาถูก และรายปี ราคาถูก
