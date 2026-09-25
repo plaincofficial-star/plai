@@ -125,163 +125,179 @@
         <div class="row justify-content-center">
           <div class="col-lg-9">
 
-<!-- item 00 General Information-->
             <div class="faq-wrapper">
-              <div class="faq-item" data-aos="fade-up" data-aos-delay="150">
+
+              <!-- item 00 General Information-->
+              <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
                 <div class="faq-header">
 					<span class="faq-number">00</span>
-					<h4>General Information</h3>
+					<h4>General Information</h4>
 					<div class="faq-toggle">
 						<i class="bi bi-plus"></i>
 						<i class="bi bi-dash"></i>
 					</div>
 				</div>
                 <div class="faq-content">
-                <div class="content-inner">				  
-                    <p>Please fill up all required necessary information.</p>                    
+                  <div class="content-inner">				  
+                    <p>General Information serves as the fundamental foundation of your facility profile, 
+					capturing essential metadata such as plant name, location, operational age, ownership structure, 
+					and regulatory classifications. This baseline data provides critical context for interpreting all subsequent technical, 
+					financial, and operational metrics.</p>                    
                     <!-- Form Container -->
                     <form class="general-info-form">
                       <!-- Company Name Field -->
-                    <div class="row align-items-center mb-4 py-2">
+                      <div class="row align-items-center mb-4 py-2">
 						<div class="col-md-4 mb-2 mb-md-0">
 							<label for="companyName" class="form-label fw-semibold text-dark mb-0">0.1 Company Name</label>
 						</div>
-    
-						<!-- ส่วนของ Text Box อยู่ด้านขวา -->
 						<div class="col-md-8">
 							<input type="text" class="form-control form-control-lg rounded-3 border-0 bg-light shadow-sm" id="companyName" placeholder="Enter company name..." required>
 						</div>
-					</div>
+					  </div>
 				
-								
                       <!-- address Field -->
-                    <div class="row align-items-center mb-4 py-2">
+                      <div class="row align-items-center mb-4 py-2">
 						<div class="col-md-4 mb-2 mb-md-0">
 							<label for="address" class="form-label fw-semibold text-dark mb-0">0.2 Address</label>
 						</div>
-    
-						<!-- ส่วนของ Text Box อยู่ด้านขวา -->
 						<div class="col-md-8">
-						<!-- ช่องกรอกที่อยู่ -->
 							<input type="text" class="form-control form-control-lg rounded-3 border-0 bg-light shadow-sm mb-2" id="address" placeholder="Enter address..." required>
-        					<!-- Dropdown เลือกจังหวัด -->					
-						<select class="form-select form-select-lg rounded-3 shadow-sm border-0 bg-light" id="locationProvince" required>
-                          <option value="" selected disabled>-- Please select a province --</option>
-                          <option value="กระบี่">กระบี่</option>
-                          <option value="กรุงเทพมหานคร">กรุงเทพมหานคร</option>
-                          <option value="กาญจนบุรี">กาญจนบุรี</option>
-                          <option value="กาฬสินธุ์">กาฬสินธุ์</option>
-                          <option value="กำแพงเพชร">กำแพงเพชร</option>
-                          <option value="ขอนแก่น">ขอนแก่น</option>
-                          <option value="จันทบุรี">จันทบุรี</option>
-                          <option value="ฉะเชิงเทรา">ฉะเชิงเทรา</option>
-                          <option value="ชลบุรี">ชลบุรี</option>
-                          <option value="ชัยนาท">ชัยนาท</option>
-                          <option value="ชัยภูมิ">ชัยภูมิ</option>
-                          <option value="ชุมพร">ชุมพร</option>
-                          <option value="เชียงราย">เชียงราย</option>
-                          <option value="เชียงใหม่">เชียงใหม่</option>
-                          <option value="ตรัง">ตรัง</option>
-                          <option value="ตราด">ตราด</option>
-                          <option value="ตาก">ตาก</option>
-                          <option value="นครนายก">นครนายก</option>
-                          <option value="นครปฐม">นครปฐม</option>
-                          <option value="นครพนม">นครพนม</option>
-                          <option value="นครราชสีมา">นครราชสีมา</option>
-                          <option value="นครศรีธรรมราช">นครศรีธรรมราช</option>
-                          <option value="นครสวรรค์">นครสวรรค์</option>
-                          <option value="นนทบุรี">นนทบุรี</option>
-                          <option value="นราธิวาส">นราธิวาส</option>
-                          <option value="น่าน">น่าน</option>
-                          <option value="บึงกาฬ">บึงกาฬ</option>
-                          <option value="บุรีรัมย์">บุรีรัมย์</option>
-                          <option value="ปทุมธานี">ปทุมธานี</option>
-                          <option value="ประจวบคีรีขันธ์">ประจวบคีรีขันธ์</option>
-                          <option value="ปราจีนบุรี">ปราจีนบุรี</option>
-                          <option value="ปัตตานี">ปัตตานี</option>
-                          <option value="พระนครศรีอยุธยา">พระนครศรีอยุธยา</option>
-                          <option value="พะเยา">พะเยา</option>
-                          <option value="พังงา">พังงา</option>
-                          <option value="พัทลุง">พัทลุง</option>
-                          <option value="พิจิตร">พิจิตร</option>
-                          <option value="พิษณุโลก">พิษณุโลก</option>
-                          <option value="เพชรบุรี">เพชรบุรี</option>
-                          <option value="เพชรบูรณ์">เพชรบูรณ์</option>
-                          <option value="แพร่">แพร่</option>
-                          <option value="ภูเก็ต">ภูเก็ต</option>
-                          <option value="มหาสารคาม">มหาสารคาม</option>
-                          <option value="มุกดาหาร">มุกดาหาร</option>
-                          <option value="แม่ฮ่องสอน">แม่ฮ่องสอน</option>
-                          <option value="ยโสธร">ยโสธร</option>
-                          <option value="ยะลา">ยะลา</option>
-                          <option value="ร้อยเอ็ด">ร้อยเอ็ด</option>
-                          <option value="ระนอง">ระนอง</option>
-                          <option value="ระยอง">ระยอง</option>
-                          <option value="ราชบุรี">ราชบุรี</option>
-                          <option value="ลพบุรี">ลพบุรี</option>
-                          <option value="ลำปาง">ลำปาง</option>
-                          <option value="ลำพูน">ลำพูน</option>
-                          <option value="เลย">เลย</option>
-                          <option value="ศรีสะเกษ">ศรีสะเกษ</option>
-                          <option value="สกลนคร">สกลนคร</option>
-                          <option value="สงขลา">สงขลา</option>
-                          <option value="สตูล">สตูล</option>
-                          <option value="สมุทรปราการ">สมุทรปราการ</option>
-                          <option value="สมุทรสงคราม">สมุทรสงคราม</option>
-                          <option value="สมุทรสาคร">สมุทรสาคร</option>
-                          <option value="สระแก้ว">สระแก้ว</option>
-                          <option value="สระบุรี">สระบุรี</option>
-                          <option value="สิงห์บุรี">สิงห์บุรี</option>
-                          <option value="สุโขทัย">สุโขทัย</option>
-                          <option value="สุพรรณบุรี">สุพรรณบุรี</option>
-                          <option value="สุราษฎร์ธานี">สุราษฎร์ธานี</option>
-                          <option value="สุรินทร์">สุรินทร์</option>
-                          <option value="หนองคาย">หนองคาย</option>
-                          <option value="หนองบัวลำภู">หนองบัวลำภู</option>
-                          <option value="อ่างทอง">อ่างทอง</option>
-                          <option value="อำนาจเจริญ">อำนาจเจริญ</option>
-                          <option value="อุดรธานี">อุดรธานี</option>
-                          <option value="อุตรดิตถ์">อุตรดิตถ์</option>
-                          <option value="อุทัยธานี">อุทัยธานี</option>
-                          <option value="อุบลราชธานี">อุบลราชธานี</option>
-                        </select>
-                      </div>
+							<select class="form-select form-select-lg rounded-3 shadow-sm border-0 bg-light" id="locationProvince" required>
+                              <option value="" selected disabled>-- Please select a province --</option>
+                              <option value="กระบี่">กระบี่</option>
+                              <option value="กรุงเทพมหานคร">กรุงเทพมหานคร</option>
+                              <option value="กาญจนบุรี">กาญจนบุรี</option>
+                              <option value="กาฬสินธุ์">กาฬสินธุ์</option>
+                              <option value="กำแพงเพชร">กำแพงเพชร</option>
+                              <option value="ขอนแก่น">ขอนแก่น</option>
+                              <option value="จันทบุรี">จันทบุรี</option>
+                              <option value="ฉะเชิงเทรา">ฉะเชิงเทรา</option>
+                              <option value="ชลบุรี">ชลบุรี</option>
+                              <option value="ชัยนาท">ชัยนาท</option>
+                              <option value="ชัยภูมิ">ชัยภูมิ</option>
+                              <option value="ชุมพร">ชุมพร</option>
+                              <option value="เชียงราย">เชียงราย</option>
+                              <option value="เชียงใหม่">เชียงใหม่</option>
+                              <option value="ตรัง">ตรัง</option>
+                              <option value="ตราด">ตราด</option>
+                              <option value="ตาก">ตาก</option>
+                              <option value="นครนายก">นครนายก</option>
+                              <option value="นครปฐม">นครปฐม</option>
+                              <option value="นครพนม">นครพนม</option>
+                              <option value="นครราชสีมา">นครราชสีมา</option>
+                              <option value="นครศรีธรรมราช">นครศรีธรรมราช</option>
+                              <option value="นครสวรรค์">นครสวรรค์</option>
+                              <option value="นนทบุรี">นนทบุรี</option>
+                              <option value="นราธิวาส">นราธิวาส</option>
+                              <option value="น่าน">น่าน</option>
+                              <option value="บึงกาฬ">บึงกาฬ</option>
+                              <option value="บุรีรัมย์">บุรีรัมย์</option>
+                              <option value="ปทุมธานี">ปทุมธานี</option>
+                              <option value="ประจวบคีรีขันธ์">ประจวบคีรีขันธ์</option>
+                              <option value="ปราจีนบุรี">ปราจีนบุรี</option>
+                              <option value="ปัตตานี">ปัตตานี</option>
+                              <option value="พระนครศรีอยุธยา">พระนครศรีอยุธยา</option>
+                              <option value="พะเยา">พะเยา</option>
+                              <option value="พังงา">พังงา</option>
+                              <option value="พัทลุง">พัทลุง</option>
+                              <option value="พิจิตร">พิจิตร</option>
+                              <option value="พิษณุโลก">พิษณุโลก</option>
+                              <option value="เพชรบุรี">เพชรบุรี</option>
+                              <option value="เพชรบูรณ์">เพชรบูรณ์</option>
+                              <option value="แพร่">แพร่</option>
+                              <option value="ภูเก็ต">ภูเก็ต</option>
+                              <option value="มหาสารคาม">มหาสารคาม</option>
+                              <option value="มุกดาหาร">มุกดาหาร</option>
+                              <option value="แม่ฮ่องสอน">แม่ฮ่องสอน</option>
+                              <option value="ยโสธร">ยโสธร</option>
+                              <option value="ยะลา">ยะลา</option>
+                              <option value="ร้อยเอ็ด">ร้อยเอ็ด</option>
+                              <option value="ระนอง">ระนอง</option>
+                              <option value="ระยอง">ระยอง</option>
+                              <option value="ราชบุรี">ราชบุรี</option>
+                              <option value="ลพบุรี">ลพบุรี</option>
+                              <option value="ลำปาง">ลำปาง</option>
+                              <option value="ลำพูน">ลำพูน</option>
+                              <option value="เลย">เลย</option>
+                              <option value="ศรีสะเกษ">ศรีสะเกษ</option>
+                              <option value="สกลนคร">สกลนคร</option>
+                              <option value="สงขลา">สงขลา</option>
+                              <option value="สตูล">สตูล</option>
+                              <option value="สมุทรปราการ">สมุทรปราการ</option>
+                              <option value="สมุทรสงคราม">สมุทรสงคราม</option>
+                              <option value="สมุทรสาคร">สมุทรสาคร</option>
+                              <option value="สระแก้ว">สระแก้ว</option>
+                              <option value="สระบุรี">สระบุรี</option>
+                              <option value="สิงห์บุรี">สิงห์บุรี</option>
+                              <option value="สุโขทัย">สุโขทัย</option>
+                              <option value="สุพรรณบุรี">สุพรรณบุรี</option>
+                              <option value="สุราษฎร์ธานี">สุราษฎร์ธานี</option>
+                              <option value="สุรินทร์">สุรินทร์</option>
+                              <option value="หนองคาย">หนองคาย</option>
+                              <option value="หนองบัวลำภู">หนองบัวลำภู</option>
+                              <option value="อ่างทอง">อ่างทอง</option>
+                              <option value="อำนาจเจริญ">อำนาจเจริญ</option>
+                              <option value="อุดรธานี">อุดรธานี</option>
+                              <option value="อุตรดิตถ์">อุตรดิตถ์</option>
+                              <option value="อุทัยธานี">อุทัยธานี</option>
+                              <option value="อุบลราชธานี">อุบลราชธานี</option>
+                            </select>
+						</div>
+					  </div>
 
-                    <!-- Contact Person Field -->
-                    <div class="row align-items-center mb-4 py-2">
+                      <!-- Contact Person Field -->
+                      <div class="row align-items-center mb-4 py-2">
 						<div class="col-md-4 mb-2 mb-md-0">
 							<label for="contactperson" class="form-label fw-semibold text-dark mb-0">0.3 Contact Person</label>
 						</div>
-    
-						<!-- ส่วนของ Text Box อยู่ด้านขวา -->
 						<div class="col-md-8">
 							<input type="text" class="form-control form-control-lg rounded-3 border-0 bg-light shadow-sm" id="contactperson" placeholder="Enter contact person name..." required>
 						</div>
-					</div>
+					  </div>
 					  
-					  
-					<div class="row align-items-center mb-4 py-2">
+                      <!-- Power Plant Type Field -->
+					  <div class="row align-items-center mb-4 py-2">
 						<div class="col-md-4 mb-2 mb-md-0">
-							<label for="powerplanttype" class="form-label fw-semibold text-dark mb-0">0.4 Power Plant Type</label>
+							<label for="plantType" class="form-label fw-semibold text-dark mb-0">0.4 Power Plant Type</label>
 						</div>
-    
-						<!-- ส่วนของ Text Box อยู่ด้านขวา -->
 						<div class="col-md-8">
-						<select class="form-select form-select-lg rounded-3 shadow-sm border-0 bg-light" id="plantType" required>
-                          <option value="" selected disabled>-- Please select power plant type --</option>
-                          <option value="biomass">Biomass Power Plant</option>
-                          <option value="wte">Waste-To-Energy Power Plant</option>                          
-						</select> 
+						    <select class="form-select form-select-lg rounded-3 shadow-sm border-0 bg-light" id="plantType" required>
+                              <option value="" selected disabled>-- Please select power plant type --</option>
+                              <option value="biomass">Biomass Power Plant</option>
+                              <option value="wte">Waste-To-Energy Power Plant</option>                          
+						    </select> 
 						</div>
-					</div>				 
-                </form>
-              </div>
-			  </div>
-				</div>
-				</div>
+					  </div>
 
-<!-- item 01 Plant Configuration & Technology Profile-->
-              <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+					  <!-- base line year -->
+					  <div class="row align-items-center mb-4 py-2">
+						<div class="col-md-4 mb-2 mb-md-0">
+							<label for="plantType" class="form-label fw-semibold text-dark mb-0">0.5 Baseline year</label>
+						</div>
+						<div class="col-md-8">
+						    <select class="form-select form-select-lg rounded-3 shadow-sm border-0 bg-light" id="plantType" required>
+                              <option value="" selected disabled>-- Please select baseline year --</option>
+							  <option value="2023">2023</option>
+                              <option value="2024">2024</option>
+                              <option value="2025">2025</option>   
+							  <option value="2026">2026</option>
+							  <option value="2027">2027</option>
+						    </select> 
+						</div>
+					  </div>
+
+					  <div class="text-end">
+                          <button type="submit" class="btn btn-primary px-4 py-2 rounded-pill shadow-sm">
+                            <i class="bi bi-check-lg me-1"></i> Save
+                          </button>
+                      </div>
+                    </form>
+				  </div>
+                </div>
+              </div>
+
+              <!-- item 01 Plant Configuration & Technology Profile-->
+              <div class="faq-item" data-aos="fade-up" data-aos-delay="150">
                 <div class="faq-header">
                   <span class="faq-number">01</span>
                   <h4>Plant Configuration & Technology Profile</h4>
@@ -292,169 +308,173 @@
                 </div>
                 <div class="faq-content">
                   <div class="content-inner">
-                    <p>These required data are using for.</p>
+                    <p>Data regarding Plant Configuration & Technology Profile serves as the structural blueprint of your facility. 
+					It outlines how your plant is architected, the specific engineering designs in place, 
+					and the technological maturity of your assets. Understanding this baseline is crucial for contextualizing 
+					all other operational, maintenance, and performance data.</p>
                   			  
-				  <form class="general-info-form">
-					<div class="row align-items-center mb-4 py-2">
+				    <form class="general-info-form">
+					  <div class="row align-items-center mb-4 py-2">
 						<div class="col-md-4 mb-2 mb-md-0">
-							<label for="powerplanttype" class="form-label fw-semibold text-dark mb-0">1.1 Technology Type</label>
+							<label for="techType" class="form-label fw-semibold text-dark mb-0">1.1 Technology Type</label>
 						</div>
 						<div class="col-md-8">
-						<select class="form-select form-select-lg rounded-3 shadow-sm border-0 bg-light" id="plantType" required>
-                          <option value="" selected disabled>-- Please select type of technology --</option>
-                          <option value="stroker">Stroker</option>
-						  <option value="bubbling">Bubbling Fluidized Bed (BFB)</option>
-						  <option value="circulating">Circulating Fludized Bed (CFB)</option>
-						  <option value="gasification">Gasification</option>
-						  <option value="pyrolysis">Pyrolysis</option>
-                          <option value="moving">Moving Grate Incineration</option>  
-						  <option value="rotary">Rotary Kiln</option>
-						  <option value="plasma">Plasma Gasification</option>
-						</select> 
+						  <select class="form-select form-select-lg rounded-3 shadow-sm border-0 bg-light" id="techType" required>
+                            <option value="" selected disabled>-- Please select type of technology --</option>
+                            <option value="stroker">Stroker</option>
+						    <option value="bubbling">Bubbling Fluidized Bed (BFB)</option>
+						    <option value="circulating">Circulating Fluidized Bed (CFB)</option>
+						    <option value="gasification">Gasification</option>
+						    <option value="pyrolysis">Pyrolysis</option>
+                            <option value="moving">Moving Grate Incineration</option>  
+						    <option value="rotary">Rotary Kiln</option>
+						    <option value="plasma">Plasma Gasification</option>
+						  </select> 
 						</div>
-					</div>
-				<!-- 1.2.1 -->	
-				<div class="row align-items-center mb-4 py-2">
+					  </div>
+
+				      <!-- 1.2.1 -->	
+				      <div class="row align-items-center mb-4 py-2">
 						<div class="col-md-4 mb-2 mb-md-0">
-							<label for="powerplanttype" class="form-label fw-semibold text-dark mb-0">1.2 Design Capacity
+							<label class="form-label fw-semibold text-dark mb-0">1.2 Design Capacity
 							<span class="d-block text-muted small mt-1">- 1.2.1 Gross Thermal Capacity</span>
 							</label>
 						</div>					
-					<div class="col-md-8">
-						<div class="input-group input-group-lg shadow-sm rounded-3 overflow-hidden">
+					    <div class="col-md-8">
+						  <div class="input-group input-group-lg shadow-sm rounded-3 overflow-hidden">
 							<input type="text" class="form-control border-0 bg-light" id="grossthermal" placeholder="Enter capacity value..." required>
                             <select class="form-select border-0 bg-light border-start text-secondary" id="grossthermalUnit" style="max-width: 160px;" required>
 								<option value="" selected disabled>-- Unit --</option>
-								<option value="lb/hr">MWth</option>
+								<option value="mwth">MWth</option>
 								<option value="lb/hr">lb/hr</option>
 								<option value="kg/hr">kg/hr</option>
 								<option value="BHP">BHP</option>
 								<option value="BTU/hr">BTU/hr</option>
 							</select>
-						</div>
-					</div>
-				</div>
+						  </div>
+					    </div>
+				      </div>
 				
-				<!-- 1.2.2 -->	
-				<div class="row align-items-center mb-4 py-2">
+				      <!-- 1.2.2 -->	
+				      <div class="row align-items-center mb-4 py-2">
 						<div class="col-md-4 mb-2 mb-md-0">							
 							<span class="d-block text-muted small mt-1">- 1.2.2 Net Thermal Capacity</span>
-							</label>
 						</div>					
-					<div class="col-md-8">
-						<div class="input-group input-group-lg shadow-sm rounded-3 overflow-hidden">
-							<input type="text" class="form-control border-0 bg-light" id="grossthermal" placeholder="Enter capacity value..." required>
-                            <select class="form-select border-0 bg-light border-start text-secondary" id="grossthermalUnit" style="max-width: 160px;" required>
+					    <div class="col-md-8">
+						  <div class="input-group input-group-lg shadow-sm rounded-3 overflow-hidden">
+							<input type="text" class="form-control border-0 bg-light" id="netthermal" placeholder="Enter capacity value..." required>
+                            <select class="form-select border-0 bg-light border-start text-secondary" id="netthermalUnit" style="max-width: 160px;" required>
 								<option value="" selected disabled>-- Unit --</option>
+								<option value="mwth">MWth</option>
 								<option value="lb/hr">lb/hr</option>
 								<option value="kg/hr">kg/hr</option>
 								<option value="BHP">BHP</option>
 								<option value="BTU/hr">BTU/hr</option>
 							</select>
-						</div>
-					</div>
-				</div>
-				<!-- 1.2.3 -->	
-				<div class="row align-items-center mb-4 py-2">
+						  </div>
+					    </div>
+				      </div>
+
+				      <!-- 1.2.3 -->	
+				      <div class="row align-items-center mb-4 py-2">
 						<div class="col-md-4 mb-2 mb-md-0">							
 							<span class="d-block text-muted small mt-1">- 1.2.3 Gross Electrical Capacity</span>
-							</label>
 						</div>					
-					<div class="col-md-8">
-						<div class="d-flex align-items-center">
-						<div class="input-group input-group-lg shadow-sm rounded-3 overflow-hidden">
-							<input type="text" class="form-control border-0 bg-light" id="grosselectric" placeholder="Enter capacity value..." required>
-                            <span class="input-group-text bg-light border-0 text-muted small px-2">MWe</span>
-						</div>
-						</div>
-					</div>
-				</div>
-				<!-- 1.2.4 -->	
-				<div class="row align-items-center mb-4 py-2">
+					    <div class="col-md-8">
+						  <div class="d-flex align-items-center">
+						    <div class="input-group input-group-lg shadow-sm rounded-3 overflow-hidden">
+							  <input type="text" class="form-control border-0 bg-light" id="grosselectric" placeholder="Enter capacity value..." required>
+                              <span class="input-group-text bg-light border-0 text-muted small px-2">MWe</span>
+						    </div>
+						  </div>
+					    </div>
+				      </div>
+
+				      <!-- 1.2.4 -->	
+				      <div class="row align-items-center mb-4 py-2">
 						<div class="col-md-4 mb-2 mb-md-0">							
 							<span class="d-block text-muted small mt-1">- 1.2.4 Net Electrical Capacity</span>
-							</label>
 						</div>					
-					<div class="col-md-8">
-						<div class="d-flex align-items-center">
-						<div class="input-group input-group-lg shadow-sm rounded-3 overflow-hidden">
-							<input type="text" class="form-control border-0 bg-light" id="netelectric" placeholder="Enter capacity value..." required>
-                            <span class="input-group-text bg-light border-0 text-muted small px-2">MWe</span>
-						</div>
-						</div>
-					</div>
-				</div>
-				<!-- 1.2.5 -->	
-				<div class="row align-items-center mb-4 py-2">
+					    <div class="col-md-8">
+						  <div class="d-flex align-items-center">
+						    <div class="input-group input-group-lg shadow-sm rounded-3 overflow-hidden">
+							  <input type="text" class="form-control border-0 bg-light" id="netelectric" placeholder="Enter capacity value..." required>
+                              <span class="input-group-text bg-light border-0 text-muted small px-2">MWe</span>
+						    </div>
+						  </div>
+					    </div>
+				      </div>
+
+				      <!-- 1.2.5 -->	
+				      <div class="row align-items-center mb-4 py-2">
 						<div class="col-md-4 mb-2 mb-md-0">							
 							<span class="d-block text-muted small mt-1">- 1.2.5 Main Steam Pressure</span>
-							</label>
 						</div>					
-					<div class="col-md-8">
-						<div class="d-flex align-items-center">
-						<div class="input-group input-group-lg shadow-sm rounded-3 overflow-hidden">
-							<input type="text" class="form-control border-0 bg-light" id="m" placeholder="Enter capacity value..." required>
-                            <select class="form-select border-0 bg-light border-start text-secondary" id="grossthermalUnit" style="max-width: 160px;" required>
+					    <div class="col-md-8">
+						  <div class="d-flex align-items-center">
+						    <div class="input-group input-group-lg shadow-sm rounded-3 overflow-hidden">
+							  <input type="text" class="form-control border-0 bg-light" id="steampressure" placeholder="Enter pressure value..." required>
+                              <select class="form-select border-0 bg-light border-start text-secondary" id="steampressureUnit" style="max-width: 160px;" required>
 								<option value="" selected disabled>-- Unit --</option>
 								<option value="bar">bar</option>
 								<option value="MPa">MPa</option>
 								<option value="kg/cm2">kg/cm2</option>
 								<option value="psi">psi</option>
-							</select>
-						</div>
-						</div>
-					</div>
-				</div>
-				<!-- 1.2.6 -->	
-				<div class="row align-items-center mb-4 py-2">
+							  </select>
+						    </div>
+						  </div>
+					    </div>
+				      </div>
+
+				      <!-- 1.2.6 -->	
+				      <div class="row align-items-center mb-4 py-2">
 						<div class="col-md-4 mb-2 mb-md-0">							
 							<span class="d-block text-muted small mt-1">- 1.2.6 Main Steam Temperature</span>
-							</label>
 						</div>					
-					<div class="col-md-8">
-						<div class="d-flex align-items-center">
-						<div class="input-group input-group-lg shadow-sm rounded-3 overflow-hidden">
-							<input type="text" class="form-control border-0 bg-light" id="m" placeholder="Enter capacity value..." required>
-                            <select class="form-select border-0 bg-light border-start text-secondary" id="grossthermalUnit" style="max-width: 160px;" required>
+					    <div class="col-md-8">
+						  <div class="d-flex align-items-center">
+						    <div class="input-group input-group-lg shadow-sm rounded-3 overflow-hidden">
+							  <input type="text" class="form-control border-0 bg-light" id="steamtemp" placeholder="Enter temperature value..." required>
+                              <select class="form-select border-0 bg-light border-start text-secondary" id="steamtempUnit" style="max-width: 160px;" required>
 								<option value="" selected disabled>-- Unit --</option>
 								<option value="celcius">Degree Celcius</option>
-								<option value="fahrenheit">Degree fahrenheit</option>
-							</select>
-						</div>
-						</div>
-					</div>
-				</div>
-				<!-- 1.2.7 -->	
-				<div class="row align-items-center mb-4 py-2">
+								<option value="fahrenheit">Degree Fahrenheit</option>
+							  </select>
+						    </div>
+						  </div>
+					    </div>
+				      </div>
+
+				      <!-- 1.2.7 -->	
+				      <div class="row align-items-center mb-4 py-2">
 						<div class="col-md-4 mb-2 mb-md-0">							
 							<span class="d-block text-muted small mt-1">- 1.2.7 Heat Recovery</span>
-							</label>
 						</div>					
-					<div class="col-md-8">
-						<div class="d-flex align-items-center">
-						<div class="input-group input-group-lg shadow-sm rounded-3 overflow-hidden">
-							<input type="text" class="form-control border-0 bg-light" id="m" placeholder="Enter capacity value..." required>
-                            <select class="form-select border-0 bg-light border-start text-secondary" id="heatrecovery" style="max-width: 160px;" required>
+					    <div class="col-md-8">
+						  <div class="d-flex align-items-center">
+						    <div class="input-group input-group-lg shadow-sm rounded-3 overflow-hidden">
+							  <input type="text" class="form-control border-0 bg-light" id="heatrecoveryval" placeholder="Enter capacity value..." required>
+                              <select class="form-select border-0 bg-light border-start text-secondary" id="heatrecovery" style="max-width: 160px;" required>
 								<option value="" selected disabled>-- Unit --</option>
 								<option value="mwth">MWth</option>
 								<option value="kg/hr">kg/hr</option>
 								<option value="lb/hr">lb/hr</option>
 								<option value="btu/hr">BTU/hr</option>
-							</select>
-						</div>
-						</div>
-					</div>
-				</div>
-				<!-- 1.2.8 -->	
-				<div class="row align-items-center mb-4 py-2">
+							  </select>
+						    </div>
+						  </div>
+					    </div>
+				      </div>
+
+				      <!-- 1.2.8 -->	
+				      <div class="row align-items-center mb-4 py-2">
 						<div class="col-md-4 mb-2 mb-md-0">							
 							<span class="d-block text-muted small mt-1">- 1.2.8 Flue Gas Cleaning System (FGCS)</span>
-							</label>
 						</div>					
-					<div class="col-md-8">
-						<div class="d-flex align-items-center">
-						<div class="input-group input-group-lg shadow-sm rounded-3 overflow-hidden">							
-                            <select class="form-select form-select-lg rounded-3 shadow-sm border-0 bg-light" id="plantType" required>
+					    <div class="col-md-8">
+						  <div class="d-flex align-items-center">
+						    <div class="input-group input-group-lg shadow-sm rounded-3 overflow-hidden w-100">							
+                              <select class="form-select form-select-lg rounded-3 shadow-sm border-0 bg-light" id="fgcstype" required>
 								<option value="" selected disabled>-- FGCS Type --</option>
 								<option value="scr">Selective Catalytic Reduction (SCR)</option>
 								<option value="sncr">Selective Non-Catalytic Reduction</option>
@@ -462,265 +482,256 @@
 								<option value="semidryscrubber">Semi-Dry Scrubber</option>
 								<option value="baghousefilter">Baghouse Filter</option>
 								<option value="electrostatic">Electrostatic Precipitator (ESP)</option>
-							</select>
-						</div>
-						</div>
-					</div>
-				</div>
-				<!-- 1.2.9 -->	
-				<div class="row align-items-center mb-4 py-2">
+							  </select>
+						    </div>
+						  </div>
+					    </div>
+				      </div>
+				
+				      <!-- 1.2.9 -->	
+				      <div class="row align-items-center mb-4 py-2">
 						<div class="col-md-4 mb-2 mb-md-0">							
-							<span class="d-block text-muted small mt-1">- 1.2.9 Flue Gas Cleaning System (FGCS)</span>
-							</label>
+							<span class="d-block text-muted small mt-1">- 1.2.9 Additional Flue Gas Metrics</span>
 						</div>					
-					<div class="col-md-8">
-						<div class="d-flex align-items-center">
-						<div class="input-group input-group-lg shadow-sm rounded-3 overflow-hidden">
-							<input type="text" class="form-control border-0 bg-light" id="m" placeholder="Enter capacity value..." required>
-                            <select class="form-select border-0 bg-light border-start text-secondary" id="fgcs" style="max-width: 160px;" required>
+					    <div class="col-md-8">
+						  <div class="d-flex align-items-center">
+						    <div class="input-group input-group-lg shadow-sm rounded-3 overflow-hidden">
+							  <input type="text" class="form-control border-0 bg-light" id="fgcsmetric" placeholder="Enter capacity value..." required>
+                              <select class="form-select border-0 bg-light border-start text-secondary" id="fgcs" style="max-width: 160px;" required>
 								<option value="" selected disabled>-- Unit --</option>
 								<option value="mwth">MWth</option>
 								<option value="ton/hr">ton/hr</option>
-							</select>
-						</div>
-						</div>
-					</div>
-				</div>
-			</div>
-					
-					    <div class="text-end">
+							  </select>
+						    </div>
+						  </div>
+					    </div>
+				      </div>
+			
+					  <div class="text-end">
                           <button type="submit" class="btn btn-primary px-4 py-2 rounded-pill shadow-sm">
-                          <i class="bi bi-check-lg me-1"></i> Save
-                        </button>
+                            <i class="bi bi-check-lg me-1"></i> Save
+                          </button>
                       </div>
-                  </form> 
-				  
-				  
+				    </form>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 02 Fuel supply chain -->
+              <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="faq-header">
+                  <span class="faq-number">02</span>
+                  <h4>Fuel Supply Chain, Feedstock, Fuel Characteristics and Risk Management</h4>
+                  <div class="faq-toggle">
+                    <i class="bi bi-plus"></i>
+                    <i class="bi bi-dash"></i>
+                  </div>
+                </div>
+                <div class="faq-content">
+                  <div class="content-inner">
+                    <p>Data regarding the Fuel Supply Chain, Feedstock, Fuel Characteristics, and Risk Management is critical for ensuring 
+	                the continuous, safe, and cost-effective operation of any energy-intensive or industrial plant. 
+	                Because fuel and raw material inputs typically represent the single largest operational expense, 
+	                managing this segment effectively is essential for maintaining both financial viability and operational stability.</p>      
+                    
+                    <form class="fuel-data-form" style="overflow-x: auto;">
+                      <!-- หัวข้อหลัก / Header ตารางฟอร์ม -->
+                      <div style="display: grid; grid-template-columns: 220px repeat(9, 140px); gap: 10px; padding-bottom: 10px; border-bottom: 2px solid #ddd; font-weight: 600; font-size: 0.85rem; min-width: 1480px;">
+                        <div>Feedstock Type</div>
+                        <div>Quantity (ton/month)</div>
+                        <div>Net Calorific Value (MJ/kg)</div>
+                        <div>Moisture Content (%)</div>
+                        <div>Ash Content (%)</div>
+                        <div>Chemical Elements (%)</div>
+                        <div>Fuel cost (THB/ton)</div>
+                        <div>Procurement Radius (kms)</div>
+                        <div>Stockpile Capacity (days)</div>
+                        <div>Seasonal Price Fluctuation (%)</div>
+                      </div>
+
+                      <!-- รายการ 2.1 - 2.12 -->
+                      <div style="display: grid; grid-template-columns: 220px repeat(9, 140px); gap: 10px; padding: 10px 0; border-bottom: 1px solid #eee; align-items: center; min-width: 1480px;">
+                        <div style="font-weight: 500; font-size: 0.9rem;">2.1 Rice husk</div>
+                        <div><input type="text" name="f_2_1_qty" placeholder="e.g., 500" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_1_ncv" placeholder="e.g., 15.5" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_1_moisture" placeholder="e.g., 12.0" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_1_ash" placeholder="e.g., 18.5" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_1_chem" placeholder="e.g., C:40, H:5" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_1_cost" placeholder="e.g., 1200" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_1_radius" placeholder="e.g., 30" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_1_stock" placeholder="e.g., 15" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_1_fluct" placeholder="e.g., 10" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                      </div>
+
+                      <div style="display: grid; grid-template-columns: 220px repeat(9, 140px); gap: 10px; padding: 10px 0; border-bottom: 1px solid #eee; align-items: center; min-width: 1480px;">
+                        <div style="font-weight: 500; font-size: 0.9rem;">2.2 Rice straw</div>
+                        <div><input type="text" name="f_2_2_qty" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_2_ncv" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_2_moisture" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_2_ash" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_2_chem" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_2_cost" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_2_radius" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_2_stock" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_2_fluct" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                      </div>
+
+                      <div style="display: grid; grid-template-columns: 220px repeat(9, 140px); gap: 10px; padding: 10px 0; border-bottom: 1px solid #eee; align-items: center; min-width: 1480px;">
+                        <div style="font-weight: 500; font-size: 0.9rem;">2.3 Palm kernel shell</div>
+                        <div><input type="text" name="f_2_3_qty" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_3_ncv" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_3_moisture" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_3_ash" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_3_chem" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_3_cost" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_3_radius" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_3_stock" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_3_fluct" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                      </div>
+
+                      <div style="display: grid; grid-template-columns: 220px repeat(9, 140px); gap: 10px; padding: 10px 0; border-bottom: 1px solid #eee; align-items: center; min-width: 1480px;">
+                        <div style="font-weight: 500; font-size: 0.9rem;">2.4 Empty fruit bunch</div>
+                        <div><input type="text" name="f_2_4_qty" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_4_ncv" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_4_moisture" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_4_ash" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_4_chem" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_4_cost" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_4_radius" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_4_stock" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_4_fluct" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                      </div>
+
+                      <div style="display: grid; grid-template-columns: 220px repeat(9, 140px); gap: 10px; padding: 10px 0; border-bottom: 1px solid #eee; align-items: center; min-width: 1480px;">
+                        <div style="font-weight: 500; font-size: 0.9rem;">2.5 Wood chip</div>
+                        <div><input type="text" name="f_2_5_qty" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_5_ncv" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_5_moisture" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_5_ash" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_5_chem" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_5_cost" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_5_radius" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_5_stock" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_5_fluct" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                      </div>
+
+                      <div style="display: grid; grid-template-columns: 220px repeat(9, 140px); gap: 10px; padding: 10px 0; border-bottom: 1px solid #eee; align-items: center; min-width: 1480px;">
+                        <div style="font-weight: 500; font-size: 0.9rem;">2.6 Sawdust</div>
+                        <div><input type="text" name="f_2_6_qty" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_6_ncv" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_6_moisture" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_6_ash" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_6_chem" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_6_cost" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_6_radius" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_6_stock" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_6_fluct" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                      </div>
+
+                      <div style="display: grid; grid-template-columns: 220px repeat(9, 140px); gap: 10px; padding: 10px 0; border-bottom: 1px solid #eee; align-items: center; min-width: 1480px;">
+                        <div style="font-weight: 500; font-size: 0.9rem;">2.7 Bagasse</div>
+                        <div><input type="text" name="f_2_7_qty" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_7_ncv" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_7_moisture" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_7_ash" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_7_chem" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_7_cost" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_7_radius" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_7_stock" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_7_fluct" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                      </div>
+
+                      <div style="display: grid; grid-template-columns: 220px repeat(9, 140px); gap: 10px; padding: 10px 0; border-bottom: 1px solid #eee; align-items: center; min-width: 1480px;">
+                        <div style="font-weight: 500; font-size: 0.9rem;">2.8 Solid waste</div>
+                        <div><input type="text" name="f_2_8_qty" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_8_ncv" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_8_moisture" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_8_ash" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_8_chem" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_8_cost" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_8_radius" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_8_stock" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_8_fluct" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                      </div>
+
+                      <div style="display: grid; grid-template-columns: 220px repeat(9, 140px); gap: 10px; padding: 10px 0; border-bottom: 1px solid #eee; align-items: center; min-width: 1480px;">
+                        <div style="font-weight: 500; font-size: 0.9rem;">2.9 Refuse-Derived Fuel (RDF)</div>
+                        <div><input type="text" name="f_2_9_qty" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_9_ncv" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_9_moisture" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_9_ash" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_9_chem" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_9_cost" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_9_radius" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_9_stock" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_9_fluct" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                      </div>
+
+                      <div style="display: grid; grid-template-columns: 220px repeat(9, 140px); gap: 10px; padding: 10px 0; border-bottom: 1px solid #eee; align-items: center; min-width: 1480px;">
+                        <div style="font-weight: 500; font-size: 0.9rem;">2.10 Household organic waste</div>
+                        <div><input type="text" name="f_2_10_qty" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_10_ncv" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_10_moisture" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_10_ash" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_10_chem" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_10_cost" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_10_radius" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_10_stock" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_10_fluct" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                      </div>
+
+                      <div style="display: grid; grid-template-columns: 220px repeat(9, 140px); gap: 10px; padding: 10px 0; border-bottom: 1px solid #eee; align-items: center; min-width: 1480px;">
+                        <div style="font-weight: 500; font-size: 0.9rem;">2.11 Coal</div>
+                        <div><input type="text" name="f_2_11_qty" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_11_ncv" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_11_moisture" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_11_ash" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_11_chem" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_11_cost" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_11_radius" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_11_stock" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_11_fluct" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                      </div>
+
+                      <div style="display: grid; grid-template-columns: 220px repeat(9, 140px); gap: 10px; padding: 10px 0; border-bottom: 2px solid #ddd; align-items: center; min-width: 1480px;">
+                        <div style="font-weight: 500; font-size: 0.9rem;">2.12 Others</div>
+                        <div><input type="text" name="f_2_12_qty" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_12_ncv" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_12_moisture" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_12_ash" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_12_chem" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_12_cost" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_12_radius" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_12_stock" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                        <div><input type="text" name="f_2_12_fluct" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
+                      </div>
+
+                      <!-- แถว Total -->
+                      <div style="display: grid; grid-template-columns: 220px repeat(9, 140px); gap: 10px; padding: 12px 0; align-items: center; min-width: 1480px; background-color: #f9f9f9; font-weight: bold;">
+                        <div style="font-size: 0.95rem;">Total / Summary</div>
+                        <div style="text-align: center; font-size: 0.85rem; color: #333;" id="total_qty">-</div>
+                        <div style="text-align: center; font-size: 0.85rem; color: #555;" id="total_ncv">-</div>
+                        <div style="text-align: center; font-size: 0.85rem; color: #555;" id="total_moisture">-</div>
+                        <div style="text-align: center; font-size: 0.85rem; color: #555;" id="total_ash">-</div>
+                        <div style="text-align: center; font-size: 0.85rem; color: #555;">-</div>
+                        <div style="text-align: center; font-size: 0.85rem; color: #555;" id="total_cost">-</div>
+                        <div style="text-align: center; font-size: 0.85rem; color: #555;">-</div>
+                        <div style="text-align: center; font-size: 0.85rem; color: #555;">-</div>
+                        <div style="text-align: center; font-size: 0.85rem; color: #555;">-</div>
+                      </div>
+                    </form>
+
+			        <div class="text-end mt-3">
+                      <button type="submit" class="btn btn-primary px-4 py-2 rounded-pill shadow-sm">
+                        <i class="bi bi-check-lg me-1"></i> Save
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
 			  
-			 
-
-<!-- 02 Fuel supply chain -->
-<div class="faq-item" data-aos="fade-up" data-aos-delay="250">
-  <div class="faq-header">
-    <span class="faq-number">02</span>
-    <h4>Fuel Supply Chain, Feedstock, Fuel Characteristics and Risk Management</h4>
-    <div class="faq-toggle">
-      <i class="bi bi-plus"></i>
-      <i class="bi bi-dash"></i>
-    </div>
-  </div>
-  <div class="faq-content">
-    <div class="content-inner">
-      <p>Fuel supply chain and feedstock characteristics data collection:</p>
-      
-      <!-- ฟอร์มสำหรับกรอกข้อมูล (มี Scroll แนวนอนอัตโนมัติบนจอเล็ก) -->
-      <form class="fuel-data-form" style="overflow-x: auto;">
-        
-        <!-- หัวข้อหลัก / Header ตารางฟอร์ม (รวม Quantity เป็นคอลัมน์แรก) -->
-        <div style="display: grid; grid-template-columns: 220px repeat(9, 140px); gap: 10px; padding-bottom: 10px; border-bottom: 2px solid #ddd; font-weight: 600; font-size: 0.85rem; min-width: 1480px;">
-          <div>Feedstock Type</div>
-          <div>Quantity (ton/month)</div>
-          <div>Net Calorific Value (MJ/kg)</div>
-          <div>Moisture Content (%)</div>
-          <div>Ash Content (%)</div>
-          <div>Chemical Elements (%)</div>
-          <div>Fuel cost (THB/ton)</div>
-          <div>Procurement Radius (kms)</div>
-          <div>Stockpile Capacity (days)</div>
-          <div>Seasonal Price Fluctuation (%)</div>
-        </div>
-
-        <!-- รายการ 2.1 Rice husk -->
-        <div style="display: grid; grid-template-columns: 220px repeat(9, 140px); gap: 10px; padding: 10px 0; border-bottom: 1px solid #eee; align-items: center; min-width: 1480px;">
-          <div style="font-weight: 500; font-size: 0.9rem;">2.1 Rice husk</div>
-          <div><input type="text" name="f_2_1_qty" placeholder="e.g., 500" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_1_ncv" placeholder="e.g., 15.5" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_1_moisture" placeholder="e.g., 12.0" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_1_ash" placeholder="e.g., 18.5" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_1_chem" placeholder="e.g., C:40, H:5" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_1_cost" placeholder="e.g., 1200" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_1_radius" placeholder="e.g., 30" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_1_stock" placeholder="e.g., 15" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_1_fluct" placeholder="e.g., 10" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-        </div>
-
-        <!-- รายการ 2.2 Rice straw -->
-        <div style="display: grid; grid-template-columns: 220px repeat(9, 140px); gap: 10px; padding: 10px 0; border-bottom: 1px solid #eee; align-items: center; min-width: 1480px;">
-          <div style="font-weight: 500; font-size: 0.9rem;">2.2 Rice straw</div>
-          <div><input type="text" name="f_2_2_qty" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_2_ncv" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_2_moisture" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_2_ash" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_2_chem" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_2_cost" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_2_radius" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_2_stock" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_2_fluct" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-        </div>
-
-        <!-- รายการ 2.3 Palm kernel shell -->
-        <div style="display: grid; grid-template-columns: 220px repeat(9, 140px); gap: 10px; padding: 10px 0; border-bottom: 1px solid #eee; align-items: center; min-width: 1480px;">
-          <div style="font-weight: 500; font-size: 0.9rem;">2.3 Palm kernel shell</div>
-          <div><input type="text" name="f_2_3_qty" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_3_ncv" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_3_moisture" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_3_ash" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_3_chem" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_3_cost" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_3_radius" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_3_stock" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_3_fluct" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-        </div>
-
-        <!-- รายการ 2.4 Empty fruit bunch -->
-        <div style="display: grid; grid-template-columns: 220px repeat(9, 140px); gap: 10px; padding: 10px 0; border-bottom: 1px solid #eee; align-items: center; min-width: 1480px;">
-          <div style="font-weight: 500; font-size: 0.9rem;">2.4 Empty fruit bunch</div>
-          <div><input type="text" name="f_2_4_qty" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_4_ncv" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_4_moisture" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_4_ash" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_4_chem" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_4_cost" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_4_radius" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_4_stock" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_4_fluct" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-        </div>
-
-        <!-- รายการ 2.5 Wood chip -->
-        <div style="display: grid; grid-template-columns: 220px repeat(9, 140px); gap: 10px; padding: 10px 0; border-bottom: 1px solid #eee; align-items: center; min-width: 1480px;">
-          <div style="font-weight: 500; font-size: 0.9rem;">2.5 Wood chip</div>
-          <div><input type="text" name="f_2_5_qty" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_5_ncv" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_5_moisture" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_5_ash" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_5_chem" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_5_cost" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_5_radius" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_5_stock" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_5_fluct" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-        </div>
-
-        <!-- รายการ 2.6 Sawdust -->
-        <div style="display: grid; grid-template-columns: 220px repeat(9, 140px); gap: 10px; padding: 10px 0; border-bottom: 1px solid #eee; align-items: center; min-width: 1480px;">
-          <div style="font-weight: 500; font-size: 0.9rem;">2.6 Sawdust</div>
-          <div><input type="text" name="f_2_6_qty" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_6_ncv" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_6_moisture" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_6_ash" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_6_chem" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_6_cost" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_6_radius" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_6_stock" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_6_fluct" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-        </div>
-
-        <!-- รายการ 2.7 Bagasse -->
-        <div style="display: grid; grid-template-columns: 220px repeat(9, 140px); gap: 10px; padding: 10px 0; border-bottom: 1px solid #eee; align-items: center; min-width: 1480px;">
-          <div style="font-weight: 500; font-size: 0.9rem;">2.7 Bagasse</div>
-          <div><input type="text" name="f_2_7_qty" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_7_ncv" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_7_moisture" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_7_ash" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_7_chem" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_7_cost" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_7_radius" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_7_stock" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_7_fluct" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-        </div>
-
-        <!-- รายการ 2.8 Solid waste -->
-        <div style="display: grid; grid-template-columns: 220px repeat(9, 140px); gap: 10px; padding: 10px 0; border-bottom: 1px solid #eee; align-items: center; min-width: 1480px;">
-          <div style="font-weight: 500; font-size: 0.9rem;">2.8 Solid waste</div>
-          <div><input type="text" name="f_2_8_qty" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_8_ncv" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_8_moisture" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_8_ash" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_8_chem" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_8_cost" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_8_radius" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_8_stock" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_8_fluct" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-        </div>
-
-        <!-- รายการ 2.9 Refuse-Derived Fuel (RDF) -->
-        <div style="display: grid; grid-template-columns: 220px repeat(9, 140px); gap: 10px; padding: 10px 0; border-bottom: 1px solid #eee; align-items: center; min-width: 1480px;">
-          <div style="font-weight: 500; font-size: 0.9rem;">2.9 Refuse-Derived Fuel (RDF)</div>
-          <div><input type="text" name="f_2_9_qty" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_9_ncv" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_9_moisture" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_9_ash" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_9_chem" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_9_cost" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_9_radius" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_9_stock" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_9_fluct" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-        </div>
-
-        <!-- รายการ 2.10 Household organic waste -->
-        <div style="display: grid; grid-template-columns: 220px repeat(9, 140px); gap: 10px; padding: 10px 0; border-bottom: 1px solid #eee; align-items: center; min-width: 1480px;">
-          <div style="font-weight: 500; font-size: 0.9rem;">2.10 Household organic waste</div>
-          <div><input type="text" name="f_2_10_qty" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_10_ncv" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_10_moisture" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_10_ash" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_10_chem" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_10_cost" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_10_radius" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_10_stock" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_10_fluct" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-        </div>
-
-        <!-- รายการ 2.11 Coal -->
-        <div style="display: grid; grid-template-columns: 220px repeat(9, 140px); gap: 10px; padding: 10px 0; border-bottom: 1px solid #eee; align-items: center; min-width: 1480px;">
-          <div style="font-weight: 500; font-size: 0.9rem;">2.11 Coal</div>
-          <div><input type="text" name="f_2_11_qty" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_11_ncv" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_11_moisture" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_11_ash" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_11_chem" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_11_cost" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_11_radius" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_11_stock" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_11_fluct" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-        </div>
-
-        <!-- รายการ 2.12 Others -->
-        <div style="display: grid; grid-template-columns: 220px repeat(9, 140px); gap: 10px; padding: 10px 0; border-bottom: 2px solid #ddd; align-items: center; min-width: 1480px;">
-          <div style="font-weight: 500; font-size: 0.9rem;">2.12 Others</div>
-          <div><input type="text" name="f_2_12_qty" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_12_ncv" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_12_moisture" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_12_ash" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_12_chem" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_12_cost" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_12_radius" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_12_stock" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-          <div><input type="text" name="f_2_12_fluct" style="width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;"></div>
-        </div>
-
-        <!-- แถว Total (ผลรวม) -->
-        <div style="display: grid; grid-template-columns: 220px repeat(9, 140px); gap: 10px; padding: 12px 0; align-items: center; min-width: 1480px; background-color: #f9f9f9; font-weight: bold;">
-          <div style="font-size: 0.95rem;">Total / Summary</div>
-          <div style="text-align: center; font-size: 0.85rem; color: #333;" id="total_qty">-</div>
-          <div style="text-align: center; font-size: 0.85rem; color: #555;" id="total_ncv">-</div>
-          <div style="text-align: center; font-size: 0.85rem; color: #555;" id="total_moisture">-</div>
-          <div style="text-align: center; font-size: 0.85rem; color: #555;" id="total_ash">-</div>
-          <div style="text-align: center; font-size: 0.85rem; color: #555;">-</div>
-          <div style="text-align: center; font-size: 0.85rem; color: #555;" id="total_cost">-</div>
-          <div style="text-align: center; font-size: 0.85rem; color: #555;">-</div>
-          <div style="text-align: center; font-size: 0.85rem; color: #555;">-</div>
-          <div style="text-align: center; font-size: 0.85rem; color: #555;">-</div>
-        </div>
-
-      </form>
-    </div>
-  </div>
-</div>			  
-			  
-<!-- 03 Energy Efficiency -->
-              <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+              <!-- 03 Energy Efficiency -->
+              <div class="faq-item" data-aos="fade-up" data-aos-delay="250">
                 <div class="faq-header">
                   <span class="faq-number">03</span>
                   <h4>Energy Efficiency & Thermal Performance</h4>
@@ -731,114 +742,95 @@
                 </div>
                 <div class="faq-content">
                   <div class="content-inner">
-                    <p>Efficiency.</p>
-                  
-				  <form class="general-info-form">
-				  <!-- OEE -->
-					<div class="row align-items-center mb-4 py-2">
+                    <p>Data regarding Energy Efficiency & Thermal Performance is vital for evaluating how effectively 
+					your facility converts energy into useful output while minimizing waste. 
+					In modern industrial operations, managing energy is no longer just an environmental checkbox—it 
+					is a fundamental driver of financial profitability and operational sustainability.</p>                  
+				    
+                    <form class="general-info-form">
+					  <!-- Gross Heat Rate -->
+					  <div class="row align-items-center mb-4 py-2">
 						<div class="col-md-4 mb-2 mb-md-0">
-							<label for="powerplanttype" class="form-label fw-semibold text-dark mb-0">3.1 OEE</label>
+							<label class="form-label fw-semibold text-dark mb-0">3.1 Gross Heat Rate</label>
 						</div>
 						<div class="col-md-8">
 							<div class="d-flex align-items-center">
 								<div class="input-group input-group-lg shadow-sm rounded-3 overflow-hidden">
-									<input type="text" class="form-control border-0 bg-light" id="grosselectric" placeholder="Enter capacity value..." required>
-									<span class="input-group-text bg-light border-0 text-muted small px-2">%</span>
-								</div>
-							</div>
-						</div>
-					</div>	
-					<!-- Gross Heat Rate -->
-					<div class="row align-items-center mb-4 py-2">
-						<div class="col-md-4 mb-2 mb-md-0">
-							<label for="powerplanttype" class="form-label fw-semibold text-dark mb-0">3.2 Gross Heat Rate</label>
-						</div>
-						<div class="col-md-8">
-							<div class="d-flex align-items-center">
-								<div class="input-group input-group-lg shadow-sm rounded-3 overflow-hidden">
-									<input type="text" class="form-control border-0 bg-light" id="grosselectric" placeholder="Enter capacity value..." required>
+									<input type="text" class="form-control border-0 bg-light" id="grossheatrate" placeholder="Enter capacity value..." required>
 									<span class="input-group-text bg-light border-0 text-muted small px-2">kJ/kWh</span>
 								</div>
 							</div>
 						</div>
-					</div>	
-					<!-- Net Heat Rate -->
-					<div class="row align-items-center mb-4 py-2">
+					  </div>	
+					  <!-- Net Heat Rate -->
+					  <div class="row align-items-center mb-4 py-2">
 						<div class="col-md-4 mb-2 mb-md-0">
-							<label for="powerplanttype" class="form-label fw-semibold text-dark mb-0">3.3 Net Heat Rate</label>
+							<label class="form-label fw-semibold text-dark mb-0">3.2 Net Heat Rate</label>
 						</div>
 						<div class="col-md-8">
 							<div class="d-flex align-items-center">
 								<div class="input-group input-group-lg shadow-sm rounded-3 overflow-hidden">
-									<input type="text" class="form-control border-0 bg-light" id="grosselectric" placeholder="Enter capacity value..." required>
+									<input type="text" class="form-control border-0 bg-light" id="netheatrate" placeholder="Enter capacity value..." required>
 									<span class="input-group-text bg-light border-0 text-muted small px-2">kJ/kWh</span>
 								</div>
 							</div>
 						</div>
-					</div>	
-					<!-- Boiler Thermal Efficiency -->
-					<div class="row align-items-center mb-4 py-2">
+					  </div>	
+					  <!-- Boiler Thermal Efficiency -->
+					  <div class="row align-items-center mb-4 py-2">
 						<div class="col-md-4 mb-2 mb-md-0">
-							<label for="powerplanttype" class="form-label fw-semibold text-dark mb-0">3.4 Boiler Thermal Efficiency</label>
+							<label class="form-label fw-semibold text-dark mb-0">3.3 Boiler Thermal Efficiency</label>
 						</div>
 						<div class="col-md-8">
 							<div class="d-flex align-items-center">
 								<div class="input-group input-group-lg shadow-sm rounded-3 overflow-hidden">
-									<input type="text" class="form-control border-0 bg-light" id="grosselectric" placeholder="Enter capacity value..." required>
+									<input type="text" class="form-control border-0 bg-light" id="boilerfficiency" placeholder="Enter capacity value..." required>
 									<span class="input-group-text bg-light border-0 text-muted small px-2">%</span>
 								</div>
 							</div>
 						</div>
-					</div>
-					<!-- Internal Auxiliary -->
-					<div class="row align-items-center mb-4 py-2">
+					  </div>
+					  <!-- Internal Auxiliary -->
+					  <div class="row align-items-center mb-4 py-2">
 						<div class="col-md-4 mb-2 mb-md-0">
-							<label for="powerplanttype" class="form-label fw-semibold text-dark mb-0">3.5 Internal Auxiliary Power Consumption</label>
+							<label class="form-label fw-semibold text-dark mb-0">3.4 Internal Auxiliary Power Consumption</label>
 						</div>
 						<div class="col-md-8">
 							<div class="d-flex align-items-center">
 								<div class="input-group input-group-lg shadow-sm rounded-3 overflow-hidden">
-									<input type="text" class="form-control border-0 bg-light" id="grosselectric" placeholder="Enter capacity value..." required>
+									<input type="text" class="form-control border-0 bg-light" id="auxpower" placeholder="Enter capacity value..." required>
 									<span class="input-group-text bg-light border-0 text-muted small px-2">%</span>
 								</div>
 							</div>
 						</div>
-					</div>	
-					<!-- Specific Fuel Consumption -->
-					<div class="row align-items-center mb-4 py-2">
+					  </div>	
+					  <!-- Specific Fuel Consumption -->
+					  <div class="row align-items-center mb-4 py-2">
 						<div class="col-md-4 mb-2 mb-md-0">
-							<label for="powerplanttype" class="form-label fw-semibold text-dark mb-0">3.6 Specific Fuel Consumption (SFC)</label>
+							<label class="form-label fw-semibold text-dark mb-0">3.5 Specific Fuel Consumption (SFC)</label>
 						</div>
 						<div class="col-md-8">
 							<div class="d-flex align-items-center">
 								<div class="input-group input-group-lg shadow-sm rounded-3 overflow-hidden">
-									<input type="text" class="form-control border-0 bg-light" id="grosselectric" placeholder="Enter capacity value..." required>
+									<input type="text" class="form-control border-0 bg-light" id="sfc" placeholder="Enter capacity value..." required>
 									<span class="input-group-text bg-light border-0 text-muted small px-2">tons/MWh</span>
 								</div>
 							</div>
 						</div>
-					</div>	
-					
-					
-			</div>
-					
-					    <div class="text-end">
-							<button type="submit" class="btn btn-primary px-4 py-2 rounded-pill shadow-sm">
-								<i class="bi bi-check-lg me-1"></i> Save
-							</button>
-						</div>
-                  </form> 
-				  
-				  
+					  </div>
+				
+					  <div class="text-end">
+						<button type="submit" class="btn btn-primary px-4 py-2 rounded-pill shadow-sm">
+							<i class="bi bi-check-lg me-1"></i> Save
+						</button>
+					  </div>
+                    </form> 
+                  </div>
                 </div>
               </div>
-			  
-			  
-			  
-			  
 
-<!-- 04 Plant Maintenance -->
-              <div class="faq-item" data-aos="fade-up" data-aos-delay="350">
+              <!-- 04 Plant Maintenance -->
+              <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
                 <div class="faq-header">
                   <span class="faq-number">04</span>
                   <h4>Plant Maintenance, Reliability, Availability & Operations</h4>
@@ -849,15 +841,233 @@
                 </div>
                 <div class="faq-content">
                   <div class="content-inner">
-                    <p>PM.</p>
+                    <p>The purpose of this questionnaire is to evaluate and benchmark current plant performance, 
+					asset health, and operational workflows. The data collected will help identify critical bottlenecks, 
+					optimize maintenance strategies, and drive operational excellence across your facility.</p>
+                  
+				    <form class="general-info-form">
+				      <!-- 4.1 -->
+					  <div class="row align-items-center mb-4 py-2">
+						<div class="col-md-4 mb-2 mb-md-0">
+							<label for="primarymaintenancestrategies" class="form-label fw-semibold text-dark mb-0">4.1 What are the primary maintenance strategies used in your facility?</label>
+						</div>
+					    <div class="col-md-8">
+						  <div class="d-flex align-items-center">
+							<div class="input-group input-group-lg shadow-sm rounded-3 overflow-hidden w-100">
+								<input type="text" class="form-control border-0 bg-light" id="primarymaintenancestrategies" placeholder="Enter maintenance strategies..." required>
+							</div>
+						  </div>
+					    </div>
+					  </div>	
+					  
+					  <!-- 4.2 -->
+					  <div class="row align-items-center mb-4 py-2">
+						<div class="col-md-4 mb-2 mb-md-0">
+							<label class="form-label fw-semibold text-dark mb-0">4.2 Equivalent Availability Factor (EAF)</label>
+						</div>
+						<div class="col-md-8">
+							<div class="d-flex align-items-center">
+								<div class="input-group input-group-lg shadow-sm rounded-3 overflow-hidden">
+									<input type="text" class="form-control border-0 bg-light" id="eaf" placeholder="Enter capacity value..." required>
+									<span class="input-group-text bg-light border-0 text-muted small px-2">%</span>
+								</div>
+							</div>
+						</div>
+					  </div>	
+					  
+					  <!-- 4.3 -->
+					  <div class="row align-items-center mb-4 py-2">
+						<div class="col-md-4 mb-2 mb-md-0">
+							<label class="form-label fw-semibold text-dark mb-0">4.3 Forced Outage Rate (FOR)</label>
+						</div>
+						<div class="col-md-8">
+							<div class="d-flex align-items-center">
+								<div class="input-group input-group-lg shadow-sm rounded-3 overflow-hidden">
+									<input type="text" class="form-control border-0 bg-light" id="for" placeholder="Enter capacity value..." required>
+									<span class="input-group-text bg-light border-0 text-muted small px-2">%</span>
+								</div>
+							</div>
+						</div>
+					  </div>	
+					  
+					  <!-- 4.4 -->
+					  <div class="row align-items-center mb-4 py-2">
+						<div class="col-md-4 mb-2 mb-md-0">
+							<label class="form-label fw-semibold text-dark mb-0">4.4 Planned Outage Factor (POF)</label>
+						</div>
+						<div class="col-md-8">
+							<div class="d-flex align-items-center">
+								<div class="input-group input-group-lg shadow-sm rounded-3 overflow-hidden">
+									<input type="text" class="form-control border-0 bg-light" id="pof" placeholder="Enter capacity value..." required>
+									<span class="input-group-text bg-light border-0 text-muted small px-2">%</span>
+								</div>
+							</div>
+						</div>
+					  </div>
+					  
+					  <!-- 4.5 -->
+					  <div class="row align-items-center mb-4 py-2">
+						<div class="col-md-4 mb-2 mb-md-0">
+							<label class="form-label fw-semibold text-dark mb-0">4.5 Capacity Factor (CF)</label>
+						</div>
+						<div class="col-md-8">
+							<div class="d-flex align-items-center">
+								<div class="input-group input-group-lg shadow-sm rounded-3 overflow-hidden">
+									<input type="text" class="form-control border-0 bg-light" id="cf" placeholder="Enter capacity value..." required>
+									<span class="input-group-text bg-light border-0 text-muted small px-2">%</span>
+								</div>
+							</div>
+						</div>
+					  </div>	
+					  
+					  <!-- 4.6 -->
+					  <div class="row align-items-center mb-4 py-2">
+						<div class="col-md-4 mb-2 mb-md-0">
+							<label class="form-label fw-semibold text-dark mb-0">4.6 OEE</label>
+						</div>
+						<div class="col-md-8">
+							<div class="d-flex align-items-center">
+								<div class="input-group input-group-lg shadow-sm rounded-3 overflow-hidden">
+									<input type="text" class="form-control border-0 bg-light" id="oee" placeholder="Enter capacity value..." required>
+									<span class="input-group-text bg-light border-0 text-muted small px-2">%</span>
+								</div>
+							</div>
+						</div>
+					  </div>
+					  
+					  <!-- 4.7 -->
+					  <div class="row align-items-center mb-4 py-2">
+						<div class="col-md-4 mb-2 mb-md-0">
+							<label class="form-label fw-semibold text-dark mb-0">4.7 Plant Availability Rate</label>
+						</div>
+						<div class="col-md-8">
+							<div class="d-flex align-items-center">
+								<div class="input-group input-group-lg shadow-sm rounded-3 overflow-hidden">
+									<input type="text" class="form-control border-0 bg-light" id="availabilityrate" placeholder="Enter capacity value..." required>
+									<span class="input-group-text bg-light border-0 text-muted small px-2">%</span>
+								</div>
+							</div>
+						</div>
+					  </div>	
+					  
+					  <!-- 4.8 -->
+					  <div class="row align-items-center mb-4 py-2">
+						<div class="col-md-4 mb-2 mb-md-0">
+							<label class="form-label fw-semibold text-dark mb-0">4.8 Mean Time Between Failures (MTBF)</label>
+						</div>
+						<div class="col-md-8">
+							<div class="d-flex align-items-center">
+								<div class="input-group input-group-lg shadow-sm rounded-3 overflow-hidden">
+									<input type="text" class="form-control border-0 bg-light" id="mtbf" placeholder="Enter capacity value..." required>
+									<span class="input-group-text bg-light border-0 text-muted small px-2">hrs</span>
+								</div>
+							</div>
+						</div>
+					  </div>						
+					  
+					  <!-- 4.9 -->
+					  <div class="row align-items-center mb-4 py-2">
+						<div class="col-md-4 mb-2 mb-md-0">
+							<label class="form-label fw-semibold text-dark mb-0">4.9 Mean Time to Repair (MTTR)</label>
+						</div>
+						<div class="col-md-8">
+							<div class="d-flex align-items-center">
+								<div class="input-group input-group-lg shadow-sm rounded-3 overflow-hidden">
+									<input type="text" class="form-control border-0 bg-light" id="mttr" placeholder="Enter capacity value..." required>
+									<span class="input-group-text bg-light border-0 text-muted small px-2">hrs</span>
+								</div>
+							</div>
+						</div>
+					  </div>	
+					  
+					  <div class="text-end">
+						<button type="submit" class="btn btn-primary px-4 py-2 rounded-pill shadow-sm">
+							<i class="bi bi-check-lg me-1"></i> Save
+						</button>
+					  </div>
+				    </form>
                   </div>
                 </div>
               </div>
+		
+              <!-- 05 Financial, OPEX and Maintenance -->		
+		      <div class="faq-item" data-aos="fade-up" data-aos-delay="350">
+                <div class="faq-header">
+                  <span class="faq-number">05</span>
+                  <h4>Financial, OPEX and Maintenance Expenses</h4>
+                  <div class="faq-toggle">
+                    <i class="bi bi-plus"></i>
+                    <i class="bi bi-dash"></i>
+                  </div>
+                </div>
+                <div class="faq-content">
+                  <div class="content-inner">
+                    <p>The purpose of this section is to evaluate the financial structure, operational expenditures (OPEX), 
+					maintenance costs, and overall economic performance associated with plant operations to ensure fiscal sustainability.</p>
+                  
+				    <form class="general-info-form">
+				      <!-- 5.1 -->
+					  <div class="row align-items-center mb-4 py-2">
+						<div class="col-md-4 mb-2 mb-md-0">
+							<label class="form-label fw-semibold text-dark mb-0">5.1 Annual Operating Expenditure (OPEX)</label>
+						</div>
+					    <div class="col-md-8">
+						  <div class="d-flex align-items-center">
+							<div class="input-group input-group-lg shadow-sm rounded-3 overflow-hidden">
+								<input type="text" class="form-control border-0 bg-light" id="opex" placeholder="Enter amount..." required>
+								<span class="input-group-text bg-light border-0 text-muted small px-2">THB/year</span>
+							</div>
+						  </div>
+					    </div>
+					  </div>
 
-            </div>
+					  <!-- 5.2 -->
+					  <div class="row align-items-center mb-4 py-2">
+						<div class="col-md-4 mb-2 mb-md-0">
+							<label class="form-label fw-semibold text-dark mb-0">5.2 Maintenance Costs Index</label>
+							<span class="d-block text-muted small mt-1">- 5.2.1 Routine Maintenance</span>
+						</div>
+						<div class="col-md-8">
+							<div class="d-flex align-items-center">
+								<div class="input-group input-group-lg shadow-sm rounded-3 overflow-hidden">
+									<input type="text" class="form-control border-0 bg-light" id="maintcost" placeholder="Enter amount..." required>
+									<span class="input-group-text bg-light border-0 text-muted small px-2">THB/MWh</span>
+								</div>
+							</div>
+						</div>
+					  </div>
+
+					  <div class="row align-items-center mb-4 py-2">
+						<div class="col-md-4 mb-2 mb-md-0">							
+							<span class="d-block text-muted small mt-1">- 5.2.2 Refractory & Superheater Overhaul</span>
+						</div>
+						<div class="col-md-8">
+							<div class="d-flex align-items-center">
+								<div class="input-group input-group-lg shadow-sm rounded-3 overflow-hidden">
+									<input type="text" class="form-control border-0 bg-light" id="maintcost" placeholder="Enter amount..." required>
+									<span class="input-group-text bg-light border-0 text-muted small px-2">THB/MWh</span>
+								</div>
+							</div>
+						</div>
+					  </div>					  
+					  
+					  <div class="text-end">
+						<button type="submit" class="btn btn-primary px-4 py-2 rounded-pill shadow-sm">
+							<i class="bi bi-check-lg me-1"></i> Save
+						</button>
+					  </div>
+				    </form>
+                  </div>
+                </div>
+	          </div>	
+
+            </div><!-- End .faq-wrapper -->
+
           </div>
         </div>
+
       </div>
+
     </section>
 
   </main>
