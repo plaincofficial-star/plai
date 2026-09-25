@@ -153,7 +153,7 @@
                 </div>
                 <div class="info-content">
                   <h3>Hours of Operation</h3>
-                  <p>Sunday-Fri: 9 AM - 6 PM</p>
+                  <p>Mon-Fri: 9 AM - 6 PM</p>
                   <p>Saturday: 9 AM - 4 PM</p>
                 </div>
               </div>
