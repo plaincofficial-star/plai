@@ -1133,81 +1133,112 @@
                 </div>
                 <div class="faq-content">
                   <div class="content-inner">
-                    <p>The purpose of this section is to evaluate the financial structure, operational expenditures (OPEX), 
-					maintenance costs, and overall economic performance associated with plant operations to ensure fiscal sustainability.</p>
+                    <p>Data regarding ESG (Environmental, Social, and Governance) and Circular Economy Management is critical for 
+					driving long-term corporate sustainability, regulatory compliance, and stakeholder trust. 
+					In modern industrial operations, integrating ESG principles and circular economy strategies goes beyond 
+					compliance—it serves as a core driver of operational resilience, resource efficiency, and risk mitigation.</p>
                   
 				    <form class="general-info-form">
-				      <!-- 5.1 -->
+				      <!-- 6.1 -->
 					  <div class="row align-items-center mb-4 py-2">
 						<div class="col-md-4 mb-2 mb-md-0">
-							<label class="form-label fw-semibold text-dark mb-0">5.1 Annual Operating Expenditure (OPEX)</label>
+							<label class="form-label fw-semibold text-dark mb-0">6.1 Emissions Intensity</label>
 						</div>
 					    <div class="col-md-8">
 						  <div class="d-flex align-items-center">
 							<div class="input-group input-group-lg shadow-sm rounded-3 overflow-hidden">
 								<input type="text" class="form-control border-0 bg-light" id="opex" placeholder="Enter amount..." required>
-								<span class="input-group-text bg-light border-0 text-muted small px-2">THB/year</span>
+								<span class="input-group-text bg-light border-0 text-muted small px-2">g/MWh</span>
 							</div>
 						  </div>
 					    </div>
 					  </div>
 
-					  <!-- 5.2 -->
+					  <!-- 6.2 -->
 					  <div class="row align-items-center mb-4 py-2">
 						<div class="col-md-4 mb-2 mb-md-0">
-							<label class="form-label fw-semibold text-dark mb-0">5.2 Maintenance Costs Index</label>
-							<span class="d-block text-muted small mt-1">- 5.2.1 Routine Maintenance</span>
+							<label class="form-label fw-semibold text-dark mb-0">6.2 Carbon Intensity</label>							
 						</div>
 						<div class="col-md-8">
 							<div class="d-flex align-items-center">
 								<div class="input-group input-group-lg shadow-sm rounded-3 overflow-hidden">
 									<input type="text" class="form-control border-0 bg-light" id="maintcost" placeholder="Enter amount..." required>
-									<span class="input-group-text bg-light border-0 text-muted small px-2">THB/MWh</span>
+									<span class="input-group-text bg-light border-0 text-muted small px-2">gCO2e/kWh</span>
 								</div>
 							</div>
 						</div>
 					  </div>
-
-					  <div class="row align-items-center mb-4 py-2">
-						<div class="col-md-4 mb-2 mb-md-0">							
-							<span class="d-block text-muted small mt-1">- 5.2.2 Refractory & Superheater Overhaul</span>
-						</div>
-						<div class="col-md-8">
-							<div class="d-flex align-items-center">
-								<div class="input-group input-group-lg shadow-sm rounded-3 overflow-hidden">
-									<input type="text" class="form-control border-0 bg-light" id="maintcost" placeholder="Enter amount..." required>
-									<span class="input-group-text bg-light border-0 text-muted small px-2">THB/MWh</span>
-								</div>
-							</div>
-						</div>
-					  </div>	
-
-					  <!-- 5.3 -->
+					  
+					  <!-- 6.3 -->
 					  <div class="row align-items-center mb-4 py-2">
 						<div class="col-md-4 mb-2 mb-md-0">
-							<label class="form-label fw-semibold text-dark mb-0">5.3 Fuel Cost per MWh</label>
+							<label class="form-label fw-semibold text-dark mb-0">6.3 Avoided Emissions</label>
 						</div>
 					    <div class="col-md-8">
 						  <div class="d-flex align-items-center">
 							<div class="input-group input-group-lg shadow-sm rounded-3 overflow-hidden">
 								<input type="text" class="form-control border-0 bg-light" id="opex" placeholder="Enter amount..." required>
-								<span class="input-group-text bg-light border-0 text-muted small px-2">THB/MWh</span>
+								<span class="input-group-text bg-light border-0 text-muted small px-2">tCO2e/MWh</span>
 							</div>
 						  </div>
 					    </div>
 					  </div>
 					  
-					  <!-- 5.4 -->
+					  <!-- 6.4 -->
 					  <div class="row align-items-center mb-4 py-2">
 						<div class="col-md-4 mb-2 mb-md-0">
-							<label class="form-label fw-semibold text-dark mb-0">5.4 Non-Fuel Operating Cost</label>
-							<span class="d-block text-muted small mt-1">- 5.4.1 Chemicals & Consumables</span>
+							<label class="form-label fw-semibold text-dark mb-0">6.4 Water Consumption Intensity</label>
+						</div>
+					    <div class="col-md-8">
+						  <div class="d-flex align-items-center">
+							<div class="input-group input-group-lg shadow-sm rounded-3 overflow-hidden">
+								<input type="text" class="form-control border-0 bg-light" id="opex" placeholder="Enter amount..." required>
+								<span class="input-group-text bg-light border-0 text-muted small px-2">m3/MWh</span>
+							</div>
+						  </div>
+					    </div>
+					  </div>
+					  
+					  <!-- 6.5 -->
+					  <div class="row align-items-center mb-4 py-2">
+						<div class="col-md-4 mb-2 mb-md-0">
+							<label for="primarymaintenancestrategies" class="form-label fw-semibold text-dark mb-0">6.5 Safety Performance : Lost Time Injury Frequency Rate (LTIFR)</label>
+						</div>
+					    <div class="col-md-8">
+						  <div class="d-flex align-items-center">
+							<div class="input-group input-group-lg shadow-sm rounded-3 overflow-hidden w-100">
+								<input type="text" class="form-control border-0 bg-light" id="primarymaintenancestrategies" placeholder="Enter maintenance strategies..." required>
+							</div>
+						  </div>
+					    </div>
+					  </div>
+					  
+					  <!-- 6.6 -->
+					  <div class="row align-items-center mb-4 py-2">
+						<div class="col-md-4 mb-2 mb-md-0">
+							<label class="form-label fw-semibold text-dark mb-0">6.6 Total Ash Generation (Bottom & Fly Ash)</label>
+						</div>
+					    <div class="col-md-8">
+						  <div class="d-flex align-items-center">
+							<div class="input-group input-group-lg shadow-sm rounded-3 overflow-hidden">
+								<input type="text" class="form-control border-0 bg-light" id="opex" placeholder="Enter amount..." required>
+								<span class="input-group-text bg-light border-0 text-muted small px-2">tons/month</span>
+							</div>
+						  </div>
+					    </div>
+					  </div>
+					  
+					  <!-- 6.7 -->
+					  <div class="row align-items-center mb-4 py-2">
+						<div class="col-md-4 mb-2 mb-md-0">
+							<label class="form-label fw-semibold text-dark mb-0">6.7 Ash Disposal / Utilization Model</label>
+							<span class="d-block text-muted small mt-1">- 6.7.1 Landfill / Outsource</span>
 						</div>
 						<div class="col-md-8">
 							<div class="d-flex align-items-center">
 								<div class="input-group input-group-lg shadow-sm rounded-3 overflow-hidden">
 									<input type="text" class="form-control border-0 bg-light" id="maintcost" placeholder="Enter amount..." required>
-									<span class="input-group-text bg-light border-0 text-muted small px-2">THB/MWh</span>
+									<span class="input-group-text bg-light border-0 text-muted small px-2">THB/ton</span>
 								</div>
 							</div>
 						</div>
@@ -1215,32 +1246,35 @@
 
 					  <div class="row align-items-center mb-4 py-2">
 						<div class="col-md-4 mb-2 mb-md-0">							
-							<span class="d-block text-muted small mt-1">- 5.4.2 Ash & Waste Costs</span>
+							<span class="d-block text-muted small mt-1">- 6.7.2 Sell</span>
 						</div>
 						<div class="col-md-8">
 							<div class="d-flex align-items-center">
 								<div class="input-group input-group-lg shadow-sm rounded-3 overflow-hidden">
 									<input type="text" class="form-control border-0 bg-light" id="maintcost" placeholder="Enter amount..." required>
-									<span class="input-group-text bg-light border-0 text-muted small px-2">THB/MWh</span>
+									<span class="input-group-text bg-light border-0 text-muted small px-2">THB/ton</span>
 								</div>
 							</div>
 						</div>
 					  </div>
 
-					  <!-- 5.5 -->
-					  <div class="row align-items-center mb-4 py-2">
+					  <!-- 6.8 -->	
+				      <div class="row align-items-center mb-4 py-2">
 						<div class="col-md-4 mb-2 mb-md-0">
-							<label class="form-label fw-semibold text-dark mb-0">5.5 Average Tariff Rate</label>
-						</div>
+							<label class="form-label fw-semibold text-dark mb-0">6.8 Waste Water Management System</label>
+						</div>					
 					    <div class="col-md-8">
 						  <div class="d-flex align-items-center">
-							<div class="input-group input-group-lg shadow-sm rounded-3 overflow-hidden">
-								<input type="text" class="form-control border-0 bg-light" id="opex" placeholder="Enter amount..." required>
-								<span class="input-group-text bg-light border-0 text-muted small px-2">THB/kWh</span>
-							</div>
+						    <div class="input-group input-group-lg shadow-sm rounded-3 overflow-hidden w-100">							
+                              <select class="form-select form-select-lg rounded-3 shadow-sm border-0 bg-light" id="fgcstype" required>
+								<option value="" selected disabled>-- treatment method --</option>
+								<option value="zld">Zero Liquid Discharge (ZLD)</option>
+								<option value="treated">Treated and discharged in compliance with environmental standards</option>
+							  </select>
+						    </div>
 						  </div>
 					    </div>
-					  </div>					  
+				      </div>					  
 					  
 					  <div class="text-end">
 						<button type="submit" class="btn btn-primary px-4 py-2 rounded-pill shadow-sm">
@@ -1268,110 +1302,65 @@
 					maintenance costs, and overall economic performance associated with plant operations to ensure fiscal sustainability.</p>
                   
 				    <form class="general-info-form">
-				      <!-- 5.1 -->
+				      <!-- 7.1 -->
 					  <div class="row align-items-center mb-4 py-2">
 						<div class="col-md-4 mb-2 mb-md-0">
-							<label class="form-label fw-semibold text-dark mb-0">5.1 Annual Operating Expenditure (OPEX)</label>
+							<label class="form-label fw-semibold text-dark mb-0">7.1 Full-Time Equivalent (FTE) Intensity</label>
 						</div>
 					    <div class="col-md-8">
 						  <div class="d-flex align-items-center">
 							<div class="input-group input-group-lg shadow-sm rounded-3 overflow-hidden">
 								<input type="text" class="form-control border-0 bg-light" id="opex" placeholder="Enter amount..." required>
-								<span class="input-group-text bg-light border-0 text-muted small px-2">THB/year</span>
+								<span class="input-group-text bg-light border-0 text-muted small px-2">FTE per Net MWe</span>
 							</div>
 						  </div>
 					    </div>
 					  </div>
 
-					  <!-- 5.2 -->
+					  <!-- 7.2 -->
 					  <div class="row align-items-center mb-4 py-2">
 						<div class="col-md-4 mb-2 mb-md-0">
-							<label class="form-label fw-semibold text-dark mb-0">5.2 Maintenance Costs Index</label>
-							<span class="d-block text-muted small mt-1">- 5.2.1 Routine Maintenance</span>
+							<label class="form-label fw-semibold text-dark mb-0">7.2 Labor Hours per MWh</label>
 						</div>
 						<div class="col-md-8">
 							<div class="d-flex align-items-center">
 								<div class="input-group input-group-lg shadow-sm rounded-3 overflow-hidden">
 									<input type="text" class="form-control border-0 bg-light" id="maintcost" placeholder="Enter amount..." required>
-									<span class="input-group-text bg-light border-0 text-muted small px-2">THB/MWh</span>
+									<span class="input-group-text bg-light border-0 text-muted small px-2">Total Man-Hours/MWh</span>
 								</div>
 							</div>
 						</div>
 					  </div>
 
-					  <div class="row align-items-center mb-4 py-2">
-						<div class="col-md-4 mb-2 mb-md-0">							
-							<span class="d-block text-muted small mt-1">- 5.2.2 Refractory & Superheater Overhaul</span>
-						</div>
-						<div class="col-md-8">
-							<div class="d-flex align-items-center">
-								<div class="input-group input-group-lg shadow-sm rounded-3 overflow-hidden">
-									<input type="text" class="form-control border-0 bg-light" id="maintcost" placeholder="Enter amount..." required>
-									<span class="input-group-text bg-light border-0 text-muted small px-2">THB/MWh</span>
-								</div>
-							</div>
-						</div>
-					  </div>	
-
-					  <!-- 5.3 -->
+					  <!-- 7.3 -->
 					  <div class="row align-items-center mb-4 py-2">
 						<div class="col-md-4 mb-2 mb-md-0">
-							<label class="form-label fw-semibold text-dark mb-0">5.3 Fuel Cost per MWh</label>
+							<label class="form-label fw-semibold text-dark mb-0">7.3 In-house vs. Contractor Ratio</label>
 						</div>
 					    <div class="col-md-8">
 						  <div class="d-flex align-items-center">
 							<div class="input-group input-group-lg shadow-sm rounded-3 overflow-hidden">
 								<input type="text" class="form-control border-0 bg-light" id="opex" placeholder="Enter amount..." required>
-								<span class="input-group-text bg-light border-0 text-muted small px-2">THB/MWh</span>
+								<span class="input-group-text bg-light border-0 text-muted small px-2">In-house (Hours) / Contractor (Hours)</span>
 							</div>
 						  </div>
 					    </div>
 					  </div>
 					  
-					  <!-- 5.4 -->
+					  <!-- 7.4 -->
 					  <div class="row align-items-center mb-4 py-2">
 						<div class="col-md-4 mb-2 mb-md-0">
-							<label class="form-label fw-semibold text-dark mb-0">5.4 Non-Fuel Operating Cost</label>
-							<span class="d-block text-muted small mt-1">- 5.4.1 Chemicals & Consumables</span>
+							<label class="form-label fw-semibold text-dark mb-0">7.4 Training Hours per Employee</label>
 						</div>
 						<div class="col-md-8">
 							<div class="d-flex align-items-center">
 								<div class="input-group input-group-lg shadow-sm rounded-3 overflow-hidden">
 									<input type="text" class="form-control border-0 bg-light" id="maintcost" placeholder="Enter amount..." required>
-									<span class="input-group-text bg-light border-0 text-muted small px-2">THB/MWh</span>
+									<span class="input-group-text bg-light border-0 text-muted small px-2">Hours/Person/Year</span>
 								</div>
 							</div>
 						</div>
-					  </div>
-
-					  <div class="row align-items-center mb-4 py-2">
-						<div class="col-md-4 mb-2 mb-md-0">							
-							<span class="d-block text-muted small mt-1">- 5.4.2 Ash & Waste Costs</span>
-						</div>
-						<div class="col-md-8">
-							<div class="d-flex align-items-center">
-								<div class="input-group input-group-lg shadow-sm rounded-3 overflow-hidden">
-									<input type="text" class="form-control border-0 bg-light" id="maintcost" placeholder="Enter amount..." required>
-									<span class="input-group-text bg-light border-0 text-muted small px-2">THB/MWh</span>
-								</div>
-							</div>
-						</div>
-					  </div>
-
-					  <!-- 5.5 -->
-					  <div class="row align-items-center mb-4 py-2">
-						<div class="col-md-4 mb-2 mb-md-0">
-							<label class="form-label fw-semibold text-dark mb-0">5.5 Average Tariff Rate</label>
-						</div>
-					    <div class="col-md-8">
-						  <div class="d-flex align-items-center">
-							<div class="input-group input-group-lg shadow-sm rounded-3 overflow-hidden">
-								<input type="text" class="form-control border-0 bg-light" id="opex" placeholder="Enter amount..." required>
-								<span class="input-group-text bg-light border-0 text-muted small px-2">THB/kWh</span>
-							</div>
-						  </div>
-					    </div>
-					  </div>					  
+					  </div>  
 					  
 					  <div class="text-end">
 						<button type="submit" class="btn btn-primary px-4 py-2 rounded-pill shadow-sm">
