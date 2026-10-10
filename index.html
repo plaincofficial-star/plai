@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="keywords" content="">
 
-  <link rel="icon" type="assets/img/png" sizes="32x32" href="assets/img/plai_logo.png">
+  <link rel="icon" type="assets/img/png" sizes="32x32" href="assets/img/plai_logo_black.png">
   
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -24,6 +24,46 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <style>
+  /* จัดรูปแบบกล่องไอคอน Our Core Values ให้สวยงามเหมือนหน้า About */
+  .call-to-action .value-item {
+    background: #fff;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.05);
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+  }
+  .call-to-action .value-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 1rem 2rem rgba(0, 0, 0, 0.1);
+  }
+  .call-to-action .value-icon {
+    font-size: 2.5rem;
+    color: rgb(255, 100, 0); /* ปรับเป็นโทนสีส้มธีม PLAI หรือเปลี่ยนตามต้องการ */
+    margin-bottom: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    background: rgba(255, 100, 0, 0.1);
+    border-radius: 50%;
+  }
+  .call-to-action .value-item h4 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #2c3e50;
+  }
+  .call-to-action .value-item p {
+    color: #6c757d;
+    font-size: 0.95rem;
+    margin-bottom: 0;
+  }
+</style>
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
@@ -49,7 +89,7 @@
           <i class="bi bi-phone d-flex align-items-center ms-4"><span>+66 85 519 1959</span></i>
         </div>
         <div class="social-links d-none d-md-flex align-items-center">
-          <a href="#!" class="twitter"><i class="bi bi-twitter-x"></i></a>
+          <a href="#!" class="twitter"><i class="bi bi-youtube"></i></a>
           <a href="#!" class="facebook"><i class="bi bi-facebook"></i></a>
           <a href="#!" class="instagram"><i class="bi bi-instagram"></i></a>
           <a href="#!" class="linkedin"><i class="bi bi-linkedin"></i></a>
@@ -306,7 +346,7 @@ delivering tangible and measurable improvements to your enterprise.</p>
           <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
             <div class="about-visual">
               <div class="main-image">
-                <img src="assets/img/health/facilities-9.webp" alt="Modern medical facility" class="img-fluid">
+                <img src="assets/img/application/pakin_flow.jpg" alt="Modern medical facility" class="img-fluid">
               </div>
             </div>
           </div>
@@ -344,18 +384,13 @@ delivering tangible and measurable improvements to your enterprise.</p>
 				<h6 class="dot-title">Total Productive Maintenance (TPM): Maximizing equipment reliability, reducing downtime, and building operational excellence.</h6>
 				<h6 class="dot-title">Human Capital Management: Enhancing workforce capability, organizational structure, and performance.</h6>
 				<h6 class="dot-title">Carbon Footprint & Sustainability: Driving carbon accounting, energy efficiency, and circular economy initiatives.</h6>
-              <div class="stats-grid">
-                <div class="stat-item">
-                  <div class="stat-number purecounter" data-purecounter-start="0" data-purecounter-end="50"
-                    data-purecounter-duration="1"></div>
-                  <div class="stat-label">Corporate Clients</div>
-                </div>
-                <div class="stat-item">
-                  <div class="stat-number purecounter" data-purecounter-start="0" data-purecounter-end="30"
-                    data-purecounter-duration="1"></div>
-                  <div class="stat-label">Service years</div>
-                </div>
+              <p class="lead-text">We provide a wide range of tools to assess your organization, 
+			  from employee potential to biomass and waste-to-energy power plants.</p>
+			  <div class="stats-grid">
+                <img src="assets/img/consult/talentmatrix.png" alt="talentmatrix" class="img-fluid" width="150" height="60">
+				<img src="assets/img/consult/beacon.png" alt="beacon" class="img-fluid" width="250">
               </div>
+			  
             </div>
 			<a href="consult.html" class="specialty-link">
                   Read more <i class="bi bi-arrow-right"></i>
@@ -903,16 +938,16 @@ delivering tangible and measurable improvements to your enterprise.</p>
             <div class="col-lg-6">
               <div class="content-wrapper" data-aos="fade-up" data-aos-delay="200">
                 <h1>Contact Us</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore
-                  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                <p>Whether it is energy management, cost reduction, enterprise application design, 
+				or enhancing your organization's overall efficiency, contact us today.</p>
 
                 <div class="cta-wrapper">
-                  <a href="appointment.html" class="primary-cta">
+                  <a href="appointment.php" class="primary-cta">
                     <span>Schedule Consultation</span>
                     <i class="bi bi-arrow-right"></i>
                   </a>
-                  <a href="services.html" class="secondary-cta">
-                    <span>Explore Services</span>
+                  <a href="training.html" class="secondary-cta">
+                    <span>Explore Courses</span>
                     <i class="bi bi-arrow-right"></i>
                   </a>
                 </div>
@@ -921,73 +956,63 @@ delivering tangible and measurable improvements to your enterprise.</p>
 
             <div class="col-lg-6">
               <div class="image-container" data-aos="fade-left" data-aos-delay="300">
-                <img src="assets/img/health/facilities-9.webp" alt="Medical Excellence" class="img-fluid">
+                <img src="assets/img/callme.jpg" alt="Medical Excellence" class="img-fluid">
               </div>
             </div>
 
           </div>
         </div>
 
-        <div class="features-section">
-
-          <div class="row g-0">
-
-            <div class="col-lg-4">
-              <div class="feature-block" data-aos="fade-up" data-aos-delay="200">
-                <div class="feature-icon">
-                  <i class="bi bi-shield-check"></i>
-                </div>
-                <h3>Advanced Technology</h3>
-                <p>We deliver solutions powered by cutting-edge technology.</p>
-              </div>
-            </div>
-
-            <div class="col-lg-4">
-              <div class="feature-block" data-aos="fade-up" data-aos-delay="300">
-                <div class="feature-icon">
-                  <i class="bi bi-clock"></i>
-                </div>
-                <h3>Reliability</h3>
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
-                  excepteur.</p>
-              </div>
-            </div>
-
-            <div class="col-lg-4">
-              <div class="feature-block" data-aos="fade-up" data-aos-delay="400">
-                <div class="feature-icon">
-                  <i class="bi bi-people"></i>
-                </div>
-                <h3>Expert Team</h3>
-                <p>Delivering world-class technical mastery and operational excellence through a team of seasoned industry veterans and global specialists.</p>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-
-        <div class="contact-block">
+        <div class="values-section" data-aos="fade-up" data-aos-delay="300">
           <div class="row">
-
-            <div class="col-lg-8">
-              <div class="contact-content" data-aos="fade-up" data-aos-delay="200">
-                <h2>Need Assistance?</h2>
-                <p>Our expert team is available...</p>
-              </div>
+            <div class="col-lg-12 text-center">
+              <h3>Our Core Values</h3>
+              <p class="section-description">These principles guide everything we do in our commitment to exceptional
+                healthcare</p>
             </div>
-
-            <div class="col-lg-4">
-              <div class="contact-actions" data-aos="fade-up" data-aos-delay="300">
-                <a href="tel:5551234567" class="emergency-call">
-                  <i class="bi bi-telephone"></i>
-                  <span>(66) 085 519 1959</span>
-                </a>
-                <a href="contact.html" class="contact-link">Find Location</a>
-              </div>
-            </div>
-
           </div>
+
+          <div class="row">
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="value-item">
+                <div class="value-icon">
+                  <i class="bi bi-people-fill"></i>
+                </div>
+                <h4>People</h4>
+                <p>Providing care with empathy and understanding for every patient's unique needs and circumstances.</p>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="value-item">
+                <div class="value-icon">
+                  <i class="bi bi-award-fill"></i>
+                </div>
+                <h4>Leadership</h4>
+                <p>Maintaining the highest standards of medical care through continuous learning and innovation.</p>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="value-item">
+                <div class="value-icon">
+                  <i class="bi bi-arrow-repeat"></i>
+                </div>
+                <h4>Agility</h4>
+                <p>Building trust through honest communication and ethical practices in all our interactions.</p>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+              <div class="value-item">
+                <div class="value-icon">
+                  <i class="bi bi-gear-wide-connected"></i>
+                </div>
+                <h4>Innovation</h4>
+                <p>Embracing cutting-edge technology and treatments to improve patient outcomes.</p>
+              </div>
+            </div>
+          </div><!-- End Values Row -->
         </div>
 
       </div>
@@ -1014,7 +1039,7 @@ delivering tangible and measurable improvements to your enterprise.</p>
               <div class="contact-info mt-5">
                 <div class="contact-item">
                   <i class="bi bi-geo-alt"></i>
-                  <span>57/1 Moo3. T.Bangkayang, A.Muang Pathumthani, Pathumthani 12000, Thailand</span>
+                  <span>85/1 Moo3. T.Bangkayang, A.Muang Pathumthani, Pathumthani 12000, Thailand</span>
                 </div>
                 <div class="contact-item">
                   <i class="bi bi-telephone"></i>
@@ -1036,11 +1061,11 @@ delivering tangible and measurable improvements to your enterprise.</p>
                   <div class="nav-column">
                     <h6>Power</h6>
                     <nav class="footer-nav">
-                      <a href="#!">Our Story</a>
-                      <a href="#!">Design Process</a>
-                      <a href="#!">Portfolio</a>
-                      <a href="#!">Case Studies</a>
-                      <a href="#!">Awards</a>
+                      <a href="power.html">Our Story</a>
+					  <a href="https://www.facebook.com/plaipower/" target="_blank" rel="noopener noreferrer">PLAI Power Facebook</a>
+					  <a href="https://www.youtube.com/@plaincofficial" target="_blank" rel="noopener noreferrer">Youtube</a>
+					  <a href="contact.php">Contact</a>
+                      <a href="award.html">Awards</a>
                     </nav>
                   </div>
                 </div>
@@ -1049,11 +1074,8 @@ delivering tangible and measurable improvements to your enterprise.</p>
                   <div class="nav-column">
                     <h6>Logistics</h6>
                     <nav class="footer-nav">
-                      <a href="#!">Brand Identity</a>
-                      <a href="#!">Web Design</a>
-                      <a href="#!">Mobile Apps</a>
-                      <a href="#!">Digital Strategy</a>
-                      <a href="#!">Consultation</a>
+                      <a href="logistics.html">Our Services</a>
+					  <a href="contact.php">Contact</a>
                     </nav>
                   </div>
                 </div>
@@ -1062,11 +1084,8 @@ delivering tangible and measurable improvements to your enterprise.</p>
                   <div class="nav-column">
                     <h6>Application</h6>
                     <nav class="footer-nav">
-                      <a href="#!">Design Blog</a>
-                      <a href="#!">Style Guide</a>
-                      <a href="#!">Free Assets</a>
-                      <a href="#!">Tutorials</a>
-                      <a href="#!">Inspiration</a>
+                      <a href="application.html">PAKIN ERP</a>
+					  <a href="contact.php">Contact</a>
                     </nav>
                   </div>
                 </div>
@@ -1075,11 +1094,12 @@ delivering tangible and measurable improvements to your enterprise.</p>
                   <div class="nav-column">
                     <h6>Consulting</h6>
                     <nav class="footer-nav">
-                      <a href="#!">Start Project</a>
-                      <a href="#!">Schedule Call</a>
-                      <a href="#!">Join Newsletter</a>
-                      <a href="#!">Follow Updates</a>
-                      <a href="#!">Partnership</a>
+                      <a href="consult.html">Our Services</a>
+                      <a href="team.html">Our Team</a>
+                      <a href="training.html">Training Courses</a>
+                      <a href="https://www.facebook.com/plaiconsult/" target="_blank" rel="noopener noreferrer">PLAI Consulting Facebook</a>
+					  <a href="https://www.youtube.com/@plaiconsulting" target="_blank" rel="noopener noreferrer">Youtube</a>
+					  <a href="contact.php">Contact</a>
                     </nav>
                   </div>
                 </div>
@@ -1114,7 +1134,7 @@ delivering tangible and measurable improvements to your enterprise.</p>
                   <!-- You can delete the links only if you've purchased the pro version. -->
                   <!-- Licensing information: https://bootstrapmade.com/license/ -->
                   <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-                  Designed by <a href="https://bootstrapmade.com/">PLAI</a>
+                  Designed by <a href="index.html">PLAI</a>
                 </div>
               </div>
             </div>
